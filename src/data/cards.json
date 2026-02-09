@@ -1,0 +1,31 @@
+[
+  {
+    "id": "gangster_franco",
+    "name": "Franco Luciano",
+    "type": "GANGSTER",
+    "strength": 2,
+    "description": "Solidny żołnierz rodziny. Nie zadaje pytań."
+  },
+  {
+    "id": "gangster_big_joey",
+    "name": "Big Joey",
+    "type": "GANGSTER",
+    "strength": 3,
+    "description": "Jego pięści to najlepszy argument w negocjacjach."
+  },
+  {
+    "id": "biznes_klub",
+    "name": "Klub Nocny",
+    "type": "BUSINESS",
+    "cost": 4000,
+    "income": 2000,
+    "description": "Idealne miejsce do prania brudnych pieniędzy."
+  },
+  {
+    "id": "rozkaz_wymuszenie",
+    "name": "Wymuszenie",
+    "type": "ORDER",
+    "diceReq": [3, 4],
+    "description": "Zmuś sklepikarza do płacenia haraczu."
+  }
+]
