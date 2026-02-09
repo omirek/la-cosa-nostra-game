@@ -10,7 +10,8 @@ export default function Auth() {
     e.preventDefault()
     setLoading(true)
     // Logowanie "Magic Link" - bez hasła, tylko email
-    const { error } = await supabase.auth.signInWithOtp({ email })
+    const redirectTo = import.meta.env.VITE_SUPABASE_REDIRECT_URL || window.location.origin
+    const { error } = await supabase.auth.signInWithOtp({ email, options: { emailRedirectTo: redirectTo } })
     
     if (error) {
       alert(error.message)
