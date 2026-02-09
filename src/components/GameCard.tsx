@@ -1,6 +1,7 @@
 import React from 'react';
 import type { CardData } from '../types/game';
-import { Briefcase, DollarSign, Crosshair, ShieldAlert, Skull, Gavel } from 'lucide-react';
+import { Briefcase, DollarSign, Crosshair, Skull } from 'lucide-react';
+// Z powyższego importu na razie usuwam ShieldAlert i Gavel, bo są nieużywane i wywala błąd
 import clsx from 'clsx';
 
 interface GameCardProps {
