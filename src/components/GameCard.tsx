@@ -2,8 +2,9 @@ import React from 'react';
 import type { CardData } from '../types/game';
 import { 
   Briefcase, DollarSign, Crosshair, Skull, Gavel, ShieldAlert, 
-  Building2, User, Banknote, Sparkles, AlertTriangle,
-  Dice1, Dice2, Dice3, Dice4, Dice5, Dice6 
+  Building2, User, Sparkles,
+  Dice1, Dice2, Dice3, Dice4, Dice5, Dice6,
+  ArrowDown, ArrowUp, Plus, Minus, Eye, FileText, Files
 } from 'lucide-react';
 import clsx from 'clsx';
 
@@ -13,8 +14,8 @@ interface GameCardProps {
   onClick?: () => void;
 }
 
-// Helper do wyświetlania kostek
-const DiceIcon = ({ value, size = 16 }: { value: number, size?: number }) => {
+// Helper: Wyświetlanie kostek
+const DiceIcon = ({ value, size = 20 }: { value: number, size?: number }) => {
   switch (value) {
     case 1: return <Dice1 size={size} />;
     case 2: return <Dice2 size={size} />;
@@ -22,151 +23,194 @@ const DiceIcon = ({ value, size = 16 }: { value: number, size?: number }) => {
     case 4: return <Dice4 size={size} />;
     case 5: return <Dice5 size={size} />;
     case 6: return <Dice6 size={size} />;
-    default: return <div className="font-bold">?</div>;
+    default: return <div className="font-bold text-lg">?</div>;
   }
 };
 
-// Helper do wyboru głównej ikony karty
+// Helper: Dobór tła głównego (Ikona)
 const getMainIcon = (card: CardData) => {
-  if (card.type === 'GANGSTER') return <Skull size={56} className="opacity-20" />;
+  const opacity = "opacity-10";
+  const size = 64;
+
+  if (card.type === 'INFLUENCE') {
+    const name = card.name.toLowerCase();
+    if (name.includes('stronnik')) return <div className={`flex items-center ${opacity}`}><Dice6 size={40} /><ArrowDown size={40} /></div>;
+    if (name.includes('sabotaż')) return <div className={`flex items-center ${opacity}`}><Dice1 size={40} /><ArrowUp size={40} /></div>;
+    if (name.includes('pistolet')) return <div className={`flex items-center ${opacity}`}><Plus size={40} /><Crosshair size={40} /></div>;
+    if (name.includes('rozproszenie')) return <div className={`flex items-center ${opacity}`}><Minus size={40} /><Crosshair size={40} /></div>;
+    if (name.includes('kapuś')) return <div className={`flex items-center ${opacity}`}><FileText size={40} /><Eye size={40} /></div>;
+    if (name.includes('szpieg')) return <div className={`flex items-center ${opacity}`}><Files size={40} /><Eye size={40} /></div>;
+    return <Briefcase size={size} className={opacity} />;
+  }
+  
+  if (card.type === 'GANGSTER') return <Skull size={size} className={opacity} />;
   
   if (card.type === 'BUSINESS') {
-    // Rozróżnienie Firma vs Biznesmen
-    if (card.subtype === 'FIRMA') return <Building2 size={56} className="opacity-20" />;
-    return <User size={56} className="opacity-20" />;
+    if (card.subtype === 'FIRMA') return <Building2 size={size} className={opacity} />;
+    return <User size={size} className={opacity} />;
   }
   
   if (card.type === 'ORDER') {
-    if (card.subtype === 'ATAK') return <Crosshair size={56} className="opacity-20" />;
-    if (card.subtype === 'ZLECENIE') return <Banknote size={56} className="opacity-20" />;
-    if (card.subtype === 'REAKCJA') return <ShieldAlert size={56} className="opacity-20" />;
-    return <Sparkles size={56} className="opacity-20" />; // Specjalne
-  }
-  
-  if (card.type === 'INFLUENCE') {
-      if (card.subtype === 'UTRUDNIENIE') return <AlertTriangle size={56} className="opacity-20" />;
-      return <Briefcase size={56} className="opacity-20" />;
+    if (card.subtype === 'ATAK') return <Crosshair size={size} className={opacity} />;
+    if (card.subtype === 'ZLECENIE') return <DollarSign size={size} className={opacity} />;
+    if (card.subtype === 'REAKCJA') return <ShieldAlert size={size} className={opacity} />;
+    return <Sparkles size={size} className={opacity} />;
   }
 
-  return <Gavel size={56} className="opacity-20" />;
+  return <Gavel size={size} className={opacity} />;
 };
 
 export const GameCard: React.FC<GameCardProps> = ({ card, scale = 1, onClick }) => {
   
-  const bgColors: Record<string, string> = {
-    GANGSTER: 'bg-stone-900 text-stone-100 border-stone-600',
-    BUSINESS: 'bg-emerald-950 text-emerald-50 border-emerald-600',
-    ORDER: 'bg-red-950 text-red-50 border-red-800',
-    INFLUENCE: 'bg-slate-900 text-slate-50 border-slate-600',
-    UNKNOWN: 'bg-gray-800 text-gray-300 border-gray-500',
+  // --- 1. ZAKTUALIZOWANA LOGIKA KOLORÓW ---
+  const getColors = () => {
+    let bg = 'bg-stone-900 border-stone-600';
+    let header = 'bg-stone-800';
+    let text = 'text-stone-100';
+
+    if (card.type === 'GANGSTER') {
+        bg = 'bg-stone-900 border-stone-600';
+        header = 'bg-stone-800';
+    } else if (card.type === 'BUSINESS') {
+        bg = 'bg-emerald-950 border-emerald-700';
+        header = 'bg-emerald-900';
+        text = 'text-emerald-50';
+    } else if (card.type === 'INFLUENCE') {
+        bg = 'bg-slate-900 border-slate-600';
+        header = 'bg-slate-800';
+        text = 'text-slate-50';
+    } else if (card.type === 'ORDER') {
+        // Wszystkie rozkazy mają to samo ciało (ciemnoczerwone/bordowe)
+        bg = 'bg-red-950 border-red-800';
+        text = 'text-red-50';
+
+        // Tylko belka nagłówka się zmienia
+        if (card.subtype === 'ZLECENIE') {
+            header = 'bg-amber-700'; // Złoty/Bursztynowy dla Zleceń ($)
+        } else if (card.subtype === 'REAKCJA') {
+            header = 'bg-indigo-900'; // Granatowy dla Reakcji (Obrona)
+        } else if (card.subtype === 'NONE' || card.subtype === 'SPECJALNA') {
+            header = 'bg-fuchsia-900'; // Fioletowy dla Specjalnych
+        } else {
+            header = 'bg-red-900'; // Czerwony dla Ataków (Domyślny)
+        }
+    }
+    return { bg, header, text };
   };
 
-  // Kolor belki z nazwą (nieco jaśniejszy od tła)
-  const headerColors: Record<string, string> = {
-    GANGSTER: 'bg-stone-800',
-    BUSINESS: 'bg-emerald-900',
-    ORDER: 'bg-red-900',
-    INFLUENCE: 'bg-slate-800',
-    UNKNOWN: 'bg-gray-700',
-  };
+  const { bg, header, text } = getColors();
+  const isNameLong = card.name.length > 18;
 
-  const bgColor = bgColors[card.type] || bgColors.UNKNOWN;
-  const headerColor = headerColors[card.type] || headerColors.UNKNOWN;
+  const getSubtypeLabel = () => {
+      if (card.type === 'INFLUENCE') return null;
+      if (card.type === 'ORDER' && card.subtype === 'NONE') return 'SPECJALNA';
+      return card.subtype;
+  };
 
   return (
     <div 
       onClick={onClick}
       style={{ transform: `scale(${scale})`, transformOrigin: 'top left' }}
       className={clsx(
-        "w-56 h-80 rounded-xl border-[3px] relative shadow-2xl flex flex-col select-none transition-all hover:brightness-110 cursor-pointer overflow-hidden group font-sans",
-        bgColor
+        "w-56 h-80 rounded-xl border-[3px] relative shadow-2xl flex flex-col select-none transition-all hover:brightness-110 cursor-pointer overflow-hidden font-sans group",
+        bg, text
       )}
     >
-      {/* --- 1. NAGŁÓWEK (Scrolling Text) --- */}
-      <div className={clsx("h-8 flex items-center px-2 relative overflow-hidden border-b border-white/20", headerColor)}>
-         <div className="whitespace-nowrap font-bold uppercase tracking-wide text-sm group-hover:-translate-x-1/2 transition-transform duration-[3000ms] ease-linear">
-            {card.name} {card.name.length > 20 && <span className="opacity-50 mx-4">{card.name}</span>}
-         </div>
+      {/* --- NAGŁÓWEK --- */}
+      <div className={clsx("h-8 flex items-center relative overflow-hidden border-b border-white/20", header)}>
+         {isNameLong ? (
+             <div className="whitespace-nowrap font-bold uppercase tracking-wide text-sm animate-marquee pl-2 text-white shadow-sm">
+                {card.name} &nbsp; • &nbsp; {card.name} &nbsp; • &nbsp;
+             </div>
+         ) : (
+             <div className="w-full text-center font-bold uppercase tracking-wide text-sm text-white shadow-sm">
+                {card.name}
+             </div>
+         )}
       </div>
 
-      {/* --- 2. SUB-NAGŁÓWEK (Typ, Faza) --- */}
-      <div className="flex justify-between items-center px-2 py-1 text-[9px] uppercase font-bold tracking-widest opacity-80 bg-black/20">
-         <div className="flex gap-1">
-             <span>{card.subtype !== 'NONE' ? card.subtype : 'SPECJALNA'}</span>
-             {card.family && <span className="text-yellow-500"> • {card.family}</span>}
-         </div>
-         {/* Faza zagrania (Wpływy) */}
-         {card.phase && <span className="text-blue-300">{card.phase.replace('Faza ', '')}</span>}
-      </div>
+      {/* --- SUB-NAGŁÓWEK --- */}
+      {(getSubtypeLabel() || card.target || card.family) && (
+        <div className="flex justify-center items-center px-1 py-0.5 text-[9px] uppercase font-bold tracking-widest bg-black/30 border-b border-white/5">
+            {getSubtypeLabel() && <span className="opacity-90">{getSubtypeLabel()}</span>}
+            
+            {card.target && (
+                <>
+                  {getSubtypeLabel() && <span className="mx-1 opacity-50">•</span>}
+                  <span className="text-yellow-500">{card.target}</span>
+                </>
+            )}
 
+            {card.family && (
+                <>
+                  <span className="mx-1 opacity-50">•</span>
+                  <span className="text-yellow-500">{card.family}</span>
+                </>
+            )}
+        </div>
+      )}
+
+      {/* --- TREŚĆ --- */}
       <div className="flex-1 flex flex-col p-2 relative">
-        
-        {/* TŁO IKONOWE (Zawsze na środku) */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+        <div className="absolute inset-0 flex items-start pt-8 justify-center pointer-events-none z-0">
            {getMainIcon(card)}
         </div>
 
-        {/* TREŚĆ (Z-Index wyżej) */}
         <div className="z-10 flex flex-col h-full gap-2">
-            
-            {/* Opis fabularny/instrukcja */}
-            {card.description && (
-                <div className="bg-black/40 p-1.5 rounded text-[10px] italic text-center leading-tight border border-white/5 shadow-sm">
+            {(card.description || card.specialCost) && (
+                <div className="bg-black/50 p-1.5 rounded text-[10px] italic text-center leading-tight border border-white/5 shadow-sm mt-1">
+                    {card.type === 'GANGSTER' && card.specialCost ? (
+                        <span className="font-bold text-yellow-200 not-italic block mb-1 uppercase text-[9px]">
+                            {card.specialCost}
+                        </span>
+                    ) : null}
                     {card.description}
                 </div>
             )}
 
-            {/* Wymagania (Requirements) */}
             {card.requirements && (
-                <div className="flex flex-wrap justify-center gap-1">
+                <div className="flex flex-wrap justify-center gap-1 mt-1">
                     {card.requirements.map((req, i) => (
-                        <span key={i} className="bg-gray-800 border border-gray-600 px-1.5 py-0.5 rounded text-[9px] uppercase font-bold">
+                        <span key={i} className="bg-gray-800 border border-gray-500 px-1.5 py-0.5 rounded text-[9px] uppercase font-bold text-gray-300">
                             {req}
                         </span>
                     ))}
                 </div>
             )}
 
-            {/* OPCJE (Lista efektów) */}
             <div className="mt-auto space-y-1">
                 {card.options && card.options.map((opt, index) => (
                     <div key={opt.id}>
-                        {/* Separator LUB */}
                         {index > 0 && (
-                            <div className="flex items-center justify-center my-0.5">
-                                <div className="h-px bg-white/20 w-full"></div>
-                                <span className="text-[9px] font-bold px-1 text-yellow-500">LUB</span>
-                                <div className="h-px bg-white/20 w-full"></div>
+                            <div className="flex items-center justify-center my-0.5 opacity-70">
+                                <div className="h-px bg-current w-full opacity-30"></div>
+                                <span className="text-[8px] font-bold px-1 uppercase">LUB</span>
+                                <div className="h-px bg-current w-full opacity-30"></div>
                             </div>
                         )}
 
                         <div className={clsx(
-                            "bg-black/60 rounded border flex flex-col p-1.5 shadow-md backdrop-blur-sm",
-                            card.type === 'ORDER' ? "border-red-500/30" : "border-blue-500/30"
+                            "bg-black/70 rounded border flex flex-col p-1.5 shadow-md backdrop-blur-sm",
+                            card.type === 'ORDER' ? "border-white/20" : "border-white/10"
                         )}>
-                            {/* Góra opcji: Kostki i Kwota */}
-                            <div className="flex justify-between items-center mb-1">
-                                {/* Kostki */}
-                                <div className="flex gap-0.5 text-yellow-400">
-                                    {opt.diceReq && opt.diceReq.map((val, i) => (
-                                        <DiceIcon key={i} value={val} size={14} />
-                                    ))}
-                                    {/* Jeśli nie ma kostek w JSON, a jest symbol braille'a (fallback) */}
-                                    {!opt.diceReq && opt.diceSymbol && (
-                                        <span className="text-xs tracking-widest">{opt.diceSymbol}</span>
+                            {(opt.diceReq || opt.amount) && (
+                                <div className="flex justify-between items-center mb-1">
+                                    <div className="flex gap-1 text-yellow-400">
+                                        {opt.diceReq ? opt.diceReq.map((val, i) => (
+                                            <DiceIcon key={i} value={val} size={22} />
+                                        )) : opt.diceSymbol && (
+                                            <span className="text-lg tracking-widest font-bold">{opt.diceSymbol}</span>
+                                        )}
+                                    </div>
+                                    {opt.amount && (
+                                        <span className="text-green-400 font-bold text-sm bg-black/60 px-1.5 rounded border border-green-900">
+                                            ${opt.amount}
+                                        </span>
                                     )}
                                 </div>
-                                {/* Kwota */}
-                                {opt.amount && (
-                                    <span className="text-green-400 font-bold text-xs bg-black/50 px-1 rounded">
-                                        ${opt.amount}
-                                    </span>
-                                )}
-                            </div>
-                            
-                            {/* Tekst Akcji */}
+                            )}
                             {opt.text && (
-                                <div className="text-[10px] leading-tight font-medium opacity-90">
+                                <div className="text-[10px] leading-tight font-medium opacity-90 text-center">
                                     {opt.text}
                                 </div>
                             )}
@@ -177,30 +221,28 @@ export const GameCard: React.FC<GameCardProps> = ({ card, scale = 1, onClick }) 
         </div>
       </div>
 
-      {/* --- 3. STOPKA (Statystyki) --- */}
-      <div className="mt-auto bg-black/40 border-t border-white/10 px-2 py-1.5 h-8 flex justify-between items-center text-xs">
-         
-         {/* LEWA: Koszt */}
-         <div className="font-bold">
-            {card.specialCost ? (
-                <span className="text-[9px] text-gray-400 uppercase leading-none block w-16">{card.specialCost}</span>
-            ) : card.cost && card.cost > 0 ? (
-                <span className="text-red-400">-${card.cost}</span>
+      {/* --- STOPKA --- */}
+      <div className="mt-auto bg-black/50 border-t border-white/10 px-3 h-7 flex justify-between items-center text-xs font-bold relative">
+         <div className="w-1/3">
+            {card.cost && card.cost > 0 ? (
+                <span className="text-red-400">${card.cost}</span>
             ) : null}
          </div>
 
-         {/* ŚRODEK: Siła (Tylko Gangster) */}
-         {card.type === 'GANGSTER' && card.strength && card.strength > 0 && (
-             <div className="flex gap-0.5 text-red-500 absolute left-1/2 -translate-x-1/2">
-                 {Array.from({ length: card.strength }).map((_, i) => <Crosshair key={i} size={16} fill="currentColor" />)}
-             </div>
-         )}
+         <div className="absolute left-1/2 -translate-x-1/2 whitespace-nowrap text-[10px] uppercase text-gray-400 tracking-wider">
+             {card.type === 'GANGSTER' && card.strength && card.strength > 0 ? (
+                 <div className="flex gap-0.5 text-red-500">
+                     {Array.from({ length: card.strength }).map((_, i) => <Crosshair key={i} size={18} strokeWidth={3} />)}
+                 </div>
+             ) : (
+                 card.phase
+             )}
+         </div>
 
-         {/* PRAWA: Dochód */}
-         <div className="font-bold text-right">
+         <div className="w-1/3 text-right">
             {card.income && card.income > 0 ? (
-                <div className="flex items-center gap-1 text-green-400">
-                     <DollarSign size={12} /><span>{card.income}</span>
+                <div className="flex items-center justify-end gap-1 text-green-400">
+                     <DollarSign size={14} strokeWidth={3} /><span>{card.income}</span>
                 </div>
             ) : null}
          </div>
