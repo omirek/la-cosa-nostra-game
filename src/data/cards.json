@@ -1,31 +1,5522 @@
 [
   {
-    "id": "gangster_franco",
-    "name": "Franco Luciano",
+    "id": "1",
     "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Little Joey",
+    "family": "Blundetto",
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "Gangster w rodzinie",
+    "income": 0,
+    "strength": 1,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "2",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Jimmy Bananas",
+    "family": "Blundetto",
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "Gangster w rodzinie",
+    "income": 0,
     "strength": 2,
-    "description": "Solidny żołnierz rodziny. Nie zadaje pytań."
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
   },
   {
-    "id": "gangster_big_joey",
-    "name": "Big Joey",
+    "id": "3",
     "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Big Joey \"Marcinek\"",
+    "family": "Blundetto",
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "Gangster w rodzinie",
+    "income": 0,
     "strength": 3,
-    "description": "Jego pięści to najlepszy argument w negocjacjach."
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
   },
   {
-    "id": "biznes_klub",
-    "name": "Klub Nocny",
-    "type": "BUSINESS",
-    "cost": 4000,
-    "income": 2000,
-    "description": "Idealne miejsce do prania brudnych pieniędzy."
+    "id": "4",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Stevie Blundetto",
+    "family": "Blundetto",
+    "description": null,
+    "phase": null,
+    "cost": 10000,
+    "specialCost": null,
+    "income": 0,
+    "strength": 2,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
   },
   {
-    "id": "rozkaz_wymuszenie",
-    "name": "Wymuszenie",
+    "id": "5",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Micky Dogs",
+    "family": "Blundetto",
+    "description": null,
+    "phase": null,
+    "cost": 15000,
+    "specialCost": null,
+    "income": 0,
+    "strength": 3,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "6",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Knocky Fivepoints",
+    "family": "Blundetto",
+    "description": null,
+    "phase": null,
+    "cost": 20000,
+    "specialCost": null,
+    "income": 0,
+    "strength": 4,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "7",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Harry Diamonds",
+    "family": "LaServa",
+    "description": null,
+    "phase": null,
+    "cost": 10000,
+    "specialCost": null,
+    "income": 0,
+    "strength": 2,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "8",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Donny Brasi",
+    "family": "LaServa",
+    "description": null,
+    "phase": null,
+    "cost": 15000,
+    "specialCost": null,
+    "income": 0,
+    "strength": 3,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "9",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Eddy Riso",
+    "family": "LaServa",
+    "description": null,
+    "phase": null,
+    "cost": 20000,
+    "specialCost": null,
+    "income": 0,
+    "strength": 4,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "10",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Sunny Bonasera",
+    "family": "LaServa",
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "Gangster w rodzinie",
+    "income": 0,
+    "strength": 2,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "11",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Jacky Two-Finger",
+    "family": "LaServa",
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "Gangster w rodzinie",
+    "income": 0,
+    "strength": 3,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "12",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Rusty LaServa",
+    "family": "LaServa",
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "Gangster w rodzinie",
+    "income": 0,
+    "strength": 1,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "13",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Vito Baritono",
+    "family": "Calmuti",
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "Gangster w rodzinie",
+    "income": 0,
+    "strength": 1,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "14",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Frankie Calmuti",
+    "family": "Calmuti",
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "Gangster w rodzinie",
+    "income": 0,
+    "strength": 2,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "15",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Bobby Ruthless",
+    "family": "Calmuti",
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "Gangster w rodzinie",
+    "income": 0,
+    "strength": 3,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "16",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Carmine Lucatoni",
+    "family": "Calmuti",
+    "description": null,
+    "phase": null,
+    "cost": 10000,
+    "specialCost": null,
+    "income": 0,
+    "strength": 2,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "17",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Salie Canalli",
+    "family": "Calmuti",
+    "description": null,
+    "phase": null,
+    "cost": 15000,
+    "specialCost": null,
+    "income": 0,
+    "strength": 3,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "18",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Rocky Santiago",
+    "family": "Calmuti",
+    "description": null,
+    "phase": null,
+    "cost": 20000,
+    "specialCost": null,
+    "income": 0,
+    "strength": 4,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "19",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Lenny DiMaggio",
+    "family": "DiMaggio",
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "Gangster w rodzinie",
+    "income": 0,
+    "strength": 2,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "20",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Phil Malony",
+    "family": "DiMaggio",
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "Gangster w rodzinie",
+    "income": 0,
+    "strength": 1,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "21",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Franco Luciano",
+    "family": "DiMaggio",
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "Gangster w rodzinie",
+    "income": 0,
+    "strength": 3,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "22",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Pablo DiMaggio",
+    "family": "DiMaggio",
+    "description": null,
+    "phase": null,
+    "cost": 15000,
+    "specialCost": null,
+    "income": 0,
+    "strength": 3,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "23",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Tommy The Cat",
+    "family": "DiMaggio",
+    "description": null,
+    "phase": null,
+    "cost": 20000,
+    "specialCost": null,
+    "income": 0,
+    "strength": 4,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "24",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Mia LaVecchia",
+    "family": "DiMaggio",
+    "description": null,
+    "phase": null,
+    "cost": 10000,
+    "specialCost": null,
+    "income": 0,
+    "strength": 2,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "25",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Fat Tony",
+    "family": "Caruso",
+    "description": null,
+    "phase": null,
+    "cost": 10000,
+    "specialCost": null,
+    "income": 0,
+    "strength": 2,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "26",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Mr. Larry Caruso",
+    "family": "Caruso",
+    "description": null,
+    "phase": null,
+    "cost": 15000,
+    "specialCost": null,
+    "income": 0,
+    "strength": 3,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "27",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Massimo Valente",
+    "family": "Caruso",
+    "description": null,
+    "phase": null,
+    "cost": 20000,
+    "specialCost": null,
+    "income": 0,
+    "strength": 4,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "28",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Paulie Pennino",
+    "family": "Caruso",
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "Gangster w rodzinie",
+    "income": 0,
+    "strength": 1,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "29",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Rocco Caruso",
+    "family": "Caruso",
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "Gangster w rodzinie",
+    "income": 0,
+    "strength": 3,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "30",
+    "type": "GANGSTER",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Babyface Tony",
+    "family": "Caruso",
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "Gangster w rodzinie",
+    "income": 0,
+    "strength": 2,
+    "strengthText": null,
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "31",
+    "type": "INFLUENCE",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Doktorek",
+    "family": null,
+    "description": "Zagraj tę kartę, kiedy Gangster lub biznesmen ma zostać zabity lub dezaktywowany",
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": [
+      {
+        "id": 1,
+        "text": "Zostaje tylko zdezaktywowany",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      },
+      {
+        "id": 2,
+        "text": "Nie zostaje dezaktywowany",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "type": "INFLUENCE",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Doktorek",
+    "family": null,
+    "description": "Zagraj tę kartę, kiedy Gangster lub biznesmen ma zostać zabity lub dezaktywowany",
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": [
+      {
+        "id": 1,
+        "text": "Zostaje tylko zdezaktywowany",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      },
+      {
+        "id": 2,
+        "text": "Nie zostaje dezaktywowany",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "33",
+    "type": "INFLUENCE",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Intrygant",
+    "family": "Blundetto",
+    "description": "Zagraj tę kartę w fazie Działania przed ruchem przeciwnika",
+    "phase": "Faza Działania",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": [
+      {
+        "id": 1,
+        "text": "Dodatkowy ruch natychmiast",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      },
+      {
+        "id": 2,
+        "text": "Zostajesz ominięty",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "type": "INFLUENCE",
+    "subtype": "UŁATWIENIE",
+    "isDefault": true,
+    "name": "Stronnik",
+    "family": "Blundetto",
+    "description": null,
+    "phase": "Faza Planowania",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "35",
+    "type": "INFLUENCE",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Kapuś",
+    "family": "Blundetto",
+    "description": null,
+    "phase": "Faza Dowolna",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": [
+      {
+        "id": 1,
+        "text": "Podejrzyj 1 zaplanowany rozkaz przeciwnika",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      },
+      {
+        "id": 2,
+        "text": "(W swoim ruchu) Wymień 4 karty interesów w Mieście na nowe",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "36",
+    "type": "INFLUENCE",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Intrygant",
+    "family": "Calmuti",
+    "description": "Zagraj tę kartę w fazie Działania przed ruchem przeciwnika",
+    "phase": "Faza Działania",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": [
+      {
+        "id": 1,
+        "text": "Dodatkowy ruch natychmiast",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      },
+      {
+        "id": 2,
+        "text": "Zostajesz ominięty",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "37",
+    "type": "INFLUENCE",
+    "subtype": "UŁATWIENIE",
+    "isDefault": true,
+    "name": "Stronnik",
+    "family": "Calmuti",
+    "description": null,
+    "phase": "Faza Planowania",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "38",
+    "type": "INFLUENCE",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Kapuś",
+    "family": "Calmuti",
+    "description": null,
+    "phase": "Faza Dowolna",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": [
+      {
+        "id": 1,
+        "text": "Podejrzyj 1 zaplanowany rozkaz przeciwnika",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      },
+      {
+        "id": 2,
+        "text": "(W swoim ruchu) Wymień 4 karty interesów w Mieście na nowe",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "39",
+    "type": "INFLUENCE",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Intrygant",
+    "family": "Caruso",
+    "description": "Zagraj tę kartę w fazie Działania przed ruchem przeciwnika",
+    "phase": "Faza Działania",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": [
+      {
+        "id": 1,
+        "text": "Dodatkowy ruch natychmiast",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      },
+      {
+        "id": 2,
+        "text": "Zostajesz ominięty",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "type": "INFLUENCE",
+    "subtype": "UŁATWIENIE",
+    "isDefault": true,
+    "name": "Stronnik",
+    "family": "Caruso",
+    "description": null,
+    "phase": "Faza Planowania",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "41",
+    "type": "INFLUENCE",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Kapuś",
+    "family": "Caruso",
+    "description": null,
+    "phase": "Faza Dowolna",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": [
+      {
+        "id": 1,
+        "text": "Podejrzyj 1 zaplanowany rozkaz przeciwnika",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      },
+      {
+        "id": 2,
+        "text": "(W swoim ruchu) Wymień 4 karty interesów w Mieście na nowe",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "42",
+    "type": "INFLUENCE",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Intrygant",
+    "family": "DiMaggio",
+    "description": "Zagraj tę kartę w fazie Działania przed ruchem przeciwnika",
+    "phase": "Faza Działania",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": [
+      {
+        "id": 1,
+        "text": "Dodatkowy ruch natychmiast",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      },
+      {
+        "id": 2,
+        "text": "Zostajesz ominięty",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "type": "INFLUENCE",
+    "subtype": "UŁATWIENIE",
+    "isDefault": true,
+    "name": "Stronnik",
+    "family": "DiMaggio",
+    "description": null,
+    "phase": "Faza Planowania",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "44",
+    "type": "INFLUENCE",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Kapuś",
+    "family": "DiMaggio",
+    "description": null,
+    "phase": "Faza Dowolna",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": [
+      {
+        "id": 1,
+        "text": "Podejrzyj 1 zaplanowany rozkaz przeciwnika",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      },
+      {
+        "id": 2,
+        "text": "(W swoim ruchu) Wymień 4 karty interesów w Mieście na nowe",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "45",
+    "type": "INFLUENCE",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Intrygant",
+    "family": "LaServa",
+    "description": "Zagraj tę kartę w fazie Działania przed ruchem przeciwnika",
+    "phase": "Faza Działania",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": [
+      {
+        "id": 1,
+        "text": "Dodatkowy ruch natychmiast",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      },
+      {
+        "id": 2,
+        "text": "Zostajesz ominięty",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "type": "INFLUENCE",
+    "subtype": "UŁATWIENIE",
+    "isDefault": true,
+    "name": "Stronnik",
+    "family": "LaServa",
+    "description": null,
+    "phase": "Faza Planowania",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "47",
+    "type": "INFLUENCE",
+    "subtype": "NONE",
+    "isDefault": true,
+    "name": "Kapuś",
+    "family": "LaServa",
+    "description": null,
+    "phase": "Faza Dowolna",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": [
+      {
+        "id": 1,
+        "text": "Podejrzyj 1 zaplanowany rozkaz przeciwnika",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      },
+      {
+        "id": 2,
+        "text": "(W swoim ruchu) Wymień 4 karty interesów w Mieście na nowe",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "type": "INFLUENCE",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Kapuś",
+    "family": null,
+    "description": null,
+    "phase": "Faza Dowolna",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": [
+      {
+        "id": 1,
+        "text": "Podejrzyj 1 zaplanowany rozkaz przeciwnika",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      },
+      {
+        "id": 2,
+        "text": "(W swoim ruchu) Wymień 4 karty interesów w Mieście na nowe",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "type": "INFLUENCE",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Kapuś",
+    "family": null,
+    "description": null,
+    "phase": "Faza Dowolna",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": [
+      {
+        "id": 1,
+        "text": "Podejrzyj 1 zaplanowany rozkaz przeciwnika",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      },
+      {
+        "id": 2,
+        "text": "(W swoim ruchu) Wymień 4 karty interesów w Mieście na nowe",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "50",
+    "type": "INFLUENCE",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Kapuś",
+    "family": null,
+    "description": null,
+    "phase": "Faza Dowolna",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": [
+      {
+        "id": 1,
+        "text": "Podejrzyj 1 zaplanowany rozkaz przeciwnika",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      },
+      {
+        "id": 2,
+        "text": "(W swoim ruchu) Wymień 4 karty interesów w Mieście na nowe",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "51",
+    "type": "INFLUENCE",
+    "subtype": "MOTYWACJA",
+    "isDefault": false,
+    "name": "Pistolet maszynowy",
+    "family": null,
+    "description": null,
+    "phase": "Faza Planowania",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "52",
+    "type": "INFLUENCE",
+    "subtype": "MOTYWACJA",
+    "isDefault": false,
+    "name": "Pistolet maszynowy",
+    "family": null,
+    "description": null,
+    "phase": "Faza Planowania",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "53",
+    "type": "INFLUENCE",
+    "subtype": "MOTYWACJA",
+    "isDefault": false,
+    "name": "Pistolet maszynowy",
+    "family": null,
+    "description": null,
+    "phase": "Faza Planowania",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "54",
+    "type": "INFLUENCE",
+    "subtype": "MOTYWACJA",
+    "isDefault": false,
+    "name": "Pistolet maszynowy",
+    "family": null,
+    "description": null,
+    "phase": "Faza Planowania",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "55",
+    "type": "INFLUENCE",
+    "subtype": "DEMOTYWACJA",
+    "isDefault": false,
+    "name": "Rozproszenie uwagi",
+    "family": null,
+    "description": null,
+    "phase": "Faza Planowania",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "56",
+    "type": "INFLUENCE",
+    "subtype": "DEMOTYWACJA",
+    "isDefault": false,
+    "name": "Rozproszenie uwagi",
+    "family": null,
+    "description": null,
+    "phase": "Faza Planowania",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "57",
+    "type": "INFLUENCE",
+    "subtype": "DEMOTYWACJA",
+    "isDefault": false,
+    "name": "Rozproszenie uwagi",
+    "family": null,
+    "description": null,
+    "phase": "Faza Planowania",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "58",
+    "type": "INFLUENCE",
+    "subtype": "UTRUDNIENIE",
+    "isDefault": false,
+    "name": "Sabotażysta",
+    "family": null,
+    "description": null,
+    "phase": "Faza Planowania",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "59",
+    "type": "INFLUENCE",
+    "subtype": "UTRUDNIENIE",
+    "isDefault": false,
+    "name": "Sabotażysta",
+    "family": null,
+    "description": null,
+    "phase": "Faza Planowania",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "60",
+    "type": "INFLUENCE",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Szpieg",
+    "family": null,
+    "description": null,
+    "phase": "Faza Dowolna",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": [
+      {
+        "id": 1,
+        "text": "Podejrzyj 2 rozkazy należące do przeciwników",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "61",
+    "type": "INFLUENCE",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Szpieg",
+    "family": null,
+    "description": null,
+    "phase": "Faza Dowolna",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": [
+      {
+        "id": 1,
+        "text": "Podejrzyj 2 rozkazy należące do przeciwników",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "62",
+    "type": "INFLUENCE",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Szpieg",
+    "family": null,
+    "description": null,
+    "phase": "Faza Dowolna",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": [
+      {
+        "id": 1,
+        "text": "Podejrzyj 2 rozkazy należące do przeciwników",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "63",
+    "type": "INFLUENCE",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Szpieg",
+    "family": null,
+    "description": null,
+    "phase": "Faza Dowolna",
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": [
+      {
+        "id": 1,
+        "text": "Podejrzyj 2 rozkazy należące do przeciwników",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "64",
     "type": "ORDER",
-    "diceReq": [3, 4],
-    "description": "Zmuś sklepikarza do płacenia haraczu."
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Napaść na biznesmena",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Biznesmen przeciwnika",
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": "Karta dezaktywowana",
+        "amount": null,
+        "diceSymbol": "⠊",
+        "diceReq": [
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "id": "65",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Uszkodzenie mienia",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Inny gracz",
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": "Wpłata do banku",
+        "amount": 5000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Wpłata do banku",
+        "amount": 2000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "66",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Napaść na biznesmena",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Biznesmen przeciwnika",
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": "Karta dezaktywowana",
+        "amount": null,
+        "diceSymbol": "⠊⠊",
+        "diceReq": [
+          2,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "id": "67",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Kradzież",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Inny gracz",
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": "Wpłata do gracza",
+        "amount": 3000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Wpłata do gracza",
+        "amount": 2000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "68",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Uszkodzenie mienia",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Inny gracz",
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": "Wpłata do Banku",
+        "amount": 5000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Wpłata do Banku",
+        "amount": 2000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "69",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Wandalizm",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Firma przeciwnika",
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": "Karta dezaktywowana",
+        "amount": null,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "70",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Kradzież",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Inny gracz",
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": "Wpłata do gracza",
+        "amount": 5000,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Wpłata do gracza",
+        "amount": 3000,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Dostawa towaru",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 9000,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 6000,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ],
+    "requirements": [
+      "Diler"
+    ]
+  },
+  {
+    "id": "72",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Przekręt",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 7000,
+        "diceSymbol": "⠊⠊",
+        "diceReq": [
+          2,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 5000,
+        "diceSymbol": "⠊",
+        "diceReq": [
+          2
+        ]
+      }
+    ],
+    "requirements": [
+      "Firma budowlana"
+    ]
+  },
+  {
+    "id": "73",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Napad na stację paliw",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 2000,
+        "diceSymbol": "⠊⠊",
+        "diceReq": [
+          2,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 1000,
+        "diceSymbol": "⠊",
+        "diceReq": [
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "id": "74",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Pogróżki",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 4000,
+        "diceSymbol": "⠊⠊",
+        "diceReq": [
+          2,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 3000,
+        "diceSymbol": "⠊",
+        "diceReq": [
+          2
+        ]
+      }
+    ],
+    "requirements": [
+      "Prawnik"
+    ]
+  },
+  {
+    "id": "75",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Usługi towarzyskie",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 5000,
+        "diceSymbol": "⠊⠊",
+        "diceReq": [
+          2,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 4000,
+        "diceSymbol": "⠊",
+        "diceReq": [
+          2
+        ]
+      }
+    ],
+    "requirements": [
+      "Alfons"
+    ]
+  },
+  {
+    "id": "76",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Przekręt z kartami kredytowymi",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 3000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 2000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "77",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Handel bronią",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 6000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 4000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Polityk"
+    ]
+  },
+  {
+    "id": "78",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Dzielnica czerwonych latarni",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 9000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 7000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Alfons",
+      "Gliniarz"
+    ]
+  },
+  {
+    "id": "79",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Kradzież samochodu",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 9000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 7000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Garaż"
+    ]
+  },
+  {
+    "id": "80",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Oszustwo inwestycyjne",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 9000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 7000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Prawnik",
+      "Lichwiarz"
+    ]
+  },
+  {
+    "id": "81",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Manipulacja rynkiem",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 7000,
+        "diceSymbol": "⠊⠊",
+        "diceReq": [
+          2,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 5000,
+        "diceSymbol": "⠊",
+        "diceReq": [
+          2
+        ]
+      }
+    ],
+    "requirements": [
+      "Zakład Utylizacji Odpadów"
+    ]
+  },
+  {
+    "id": "82",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Przemyt papierosów",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 6000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 4000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Gliniarz"
+    ]
+  },
+  {
+    "id": "83",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Postępowanie upadłościowe",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "1",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 7000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 5000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Lichwiarz"
+    ]
+  },
+  {
+    "id": "84",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Napaść na biznesmena",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Biznesmen przeciwnika",
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": "Karta dezaktywowana",
+        "amount": null,
+        "diceSymbol": "⠊⠊",
+        "diceReq": [
+          2,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "id": "85",
+    "type": "ORDER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Pranie brudnych pieniędzy",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": "Pranie brudnych pieniędzy",
+        "amount": 15000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Pranie brudnych pieniędzy",
+        "amount": 8000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "86",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Zabójstwo biznesmena",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Biznesmen przeciwnika",
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zostaje zamordowany",
+        "amount": null,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Karta dezaktywowana",
+        "amount": null,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "87",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Wandalizm",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Firma przeciwnika",
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": "Karta dezaktywowana",
+        "amount": null,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "88",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Oszustwo",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 11000,
+        "diceSymbol": "⠊⠊",
+        "diceReq": [
+          2,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 9000,
+        "diceSymbol": "⠊",
+        "diceReq": [
+          2
+        ]
+      }
+    ],
+    "requirements": [
+      "Kasyno"
+    ]
+  },
+  {
+    "id": "89",
+    "type": "ORDER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Pranie brudnych pieniędzy",
+    "family": null,
+    "description": "Możesz wyprać część posiadanej gotówki",
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": "Pierzesz",
+        "amount": 15000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Pierzesz",
+        "amount": 8000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "90",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Kradzież",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Inny gracz",
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": "Wpłata do gracza",
+        "amount": 6000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Wpłata do gracza",
+        "amount": 4000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "91",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Zamówienia publicznie",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 12000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 9000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Zakład Utylizacji Odpadów",
+      "Polityk"
+    ]
+  },
+  {
+    "id": "92",
+    "type": "ORDER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Koneksje",
+    "family": null,
+    "description": "Przejrzyj stos kart Interesu i kup 1 dowolną kartę",
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": "Płacisz mniej",
+        "amount": 2000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Płacisz pełną cenę",
+        "amount": null,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "93",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Szantaż",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 10000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 7000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Alfons",
+      "Prawnik"
+    ]
+  },
+  {
+    "id": "94",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Oszustwo inwestycyjne",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 12000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 9000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Firma budowlana",
+      "Lichwiarz"
+    ]
+  },
+  {
+    "id": "95",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Przekupstwo",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Biznesmen przeciwnika",
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zmienia właściciela",
+        "amount": null,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": null,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "96",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Kradzież",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Inny gracz",
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": "Wpłata do gracza",
+        "amount": 8000,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Wpłata do gracza",
+        "amount": 5000,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "97",
+    "type": "ORDER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Przyjęcie urodzinowe",
+    "family": null,
+    "description": "Masz urodziny!",
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": "Każdy z graczy daje ci prezent",
+        "amount": 3000,
+        "diceSymbol": "⠊⠊",
+        "diceReq": [
+          2,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Każdy z graczy daje ci prezent",
+        "amount": 1000,
+        "diceSymbol": "⠊",
+        "diceReq": [
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "id": "98",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Fałszowanie pieniędzy",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 10000,
+        "diceSymbol": "⠊⠊",
+        "diceReq": [
+          2,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 8000,
+        "diceSymbol": "⠊",
+        "diceReq": [
+          2
+        ]
+      }
+    ],
+    "requirements": [
+      "Klub nocny"
+    ]
+  },
+  {
+    "id": "99",
+    "type": "ORDER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Propozycja nie do odrzucenia",
+    "family": null,
+    "description": "Możesz natychmiast kupić kartę interesu z rynku",
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": "Płacisz połowę ceny",
+        "amount": null,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Płacisz mniej",
+        "amount": 1000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "100",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Bankructwo",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 11000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 8000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Alfons",
+      "Lichwiarz"
+    ]
+  },
+  {
+    "id": "101",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Handel towarem",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 14000,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 9000,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ],
+    "requirements": [
+      "Diler",
+      "Diler"
+    ]
+  },
+  {
+    "id": "102",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Przekupstwo",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Biznesmen przeciwnika",
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zmienia właściciela",
+        "amount": null,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": null,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "103",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Kradzież samochodu",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "2",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 12000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 9000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Garaż",
+      "Gliniarz"
+    ]
+  },
+  {
+    "id": "104",
+    "type": "ORDER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Pranie brudnych pieniędzy",
+    "family": null,
+    "description": "Możesz wyprać część posiadanej gotówki",
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": "Pranie brudnych pieniędzy",
+        "amount": 15000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Pranie brudnych pieniędzy",
+        "amount": 8000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "105",
+    "type": "ORDER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Pranie brudnych pieniędzy",
+    "family": null,
+    "description": "Możesz wyprać część posiadanej gotówki",
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": "Pranie brudnych pieniędzy",
+        "amount": 15000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Pranie brudnych pieniędzy",
+        "amount": 8000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "106",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Kradzież",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Inny gracz",
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": "Wpłata do gracza",
+        "amount": 8000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Wpłata do gracza",
+        "amount": 6000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "107",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Zabójstwo biznesmena",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Biznesmen przeciwnika",
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zostaje zamordowany",
+        "amount": null,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Karta dezaktywowana",
+        "amount": null,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "108",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Przekupstwo",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Biznesmen przeciwnika",
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zmienia właściciela",
+        "amount": null,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": null,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "109",
+    "type": "ORDER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Koneksje",
+    "family": null,
+    "description": "Przejrzyj stos kart Interesu i kup 1 dowolną kartę",
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": "Płacisz mniej",
+        "amount": 2000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Płacisz pełną cenę",
+        "amount": null,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "110",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Morderstwo",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Gangster przeciwnika",
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zostaje zamordowany",
+        "amount": null,
+        "diceSymbol": "?",
+        "diceReq": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": null,
+        "diceSymbol": "?",
+        "diceReq": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "111",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Samochód pułapka",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Gangster przeciwnika",
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zostaje zamordowany",
+        "amount": null,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Karta dezaktywowana",
+        "amount": null,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "112",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Podpalenie",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Firma przeciwnika",
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zostaje zniszczona",
+        "amount": null,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Karta dezaktywowana",
+        "amount": null,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "113",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Nielegalne dotacje",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 15000,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 10000,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ],
+    "requirements": [
+      "Firma budowlana",
+      "Polityk"
+    ]
+  },
+  {
+    "id": "114",
+    "type": "ORDER",
+    "subtype": "REAKCJA",
+    "isDefault": false,
+    "name": "Rabunek",
+    "family": null,
+    "description": "Wykonaj ten rozkaz, kiedy inny gracz wykonał zlecenie",
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": "Dostajesz cały zysk",
+        "amount": null,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Dostajesz połowę zysku",
+        "amount": null,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "115",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Przemyt towaru",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 14000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 10000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Diler",
+      "Diler",
+      "Prawnik"
+    ]
+  },
+  {
+    "id": "116",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Morderstwo",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Gangster przeciwnika",
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zostaje zamordowany",
+        "amount": null,
+        "diceSymbol": "?",
+        "diceReq": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": null,
+        "diceSymbol": "?",
+        "diceReq": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "117",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Morderstwo",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Gangster przeciwnika",
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zostaje zamordowany",
+        "amount": null,
+        "diceSymbol": "?",
+        "diceReq": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": null,
+        "diceSymbol": "?",
+        "diceReq": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "118",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Melanż",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 15000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 11000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Lichwiarz",
+      "Diler",
+      "Alfons"
+    ]
+  },
+  {
+    "id": "119",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Zabójstwo biznesmena",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Biznesmen przeciwnika",
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zostaje zamordowany",
+        "amount": null,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Karta dezaktywowana",
+        "amount": null,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "120",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Przekupstwo",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Biznesmen przeciwnika",
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zmienia właściciela",
+        "amount": null,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": null,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "121",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Fałszowanie wyników głosowania",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 16000,
+        "diceSymbol": "⠊⠊",
+        "diceReq": [
+          2,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 13000,
+        "diceSymbol": "⠊",
+        "diceReq": [
+          2
+        ]
+      }
+    ],
+    "requirements": [
+      "Polityk",
+      "Alfons",
+      "Klub nocny"
+    ]
+  },
+  {
+    "id": "122",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Lichwa",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 11000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 7000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Lichwiarz",
+      "Gliniarz"
+    ]
+  },
+  {
+    "id": "123",
+    "type": "ORDER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Propozycja nie do odrzucenia",
+    "family": null,
+    "description": "Możesz natychmiast kupić kartę interesu z rynku",
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": "Płacisz połowę ceny",
+        "amount": null,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Płacisz mniej",
+        "amount": 1000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "124",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Wywóz niebezpiecznych odpadów",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 13000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 9000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Zakład Utylizacji Odpadów",
+      "Gliniarz"
+    ]
+  },
+  {
+    "id": "125",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Zabójczy numer",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 17000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 13000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Kasyno",
+      "Alfons"
+    ]
+  },
+  {
+    "id": "126",
+    "type": "ORDER",
+    "subtype": "REAKCJA",
+    "isDefault": false,
+    "name": "Rabunek",
+    "family": null,
+    "description": "Wykonaj ten rozkaz, kiedy inny gracz wykonał zlecenie",
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": "Dostajesz cały zysk",
+        "amount": null,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Dostajesz połowę zysku",
+        "amount": null,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "127",
+    "type": "ORDER",
+    "subtype": "REAKCJA",
+    "isDefault": false,
+    "name": "Pułapka",
+    "family": null,
+    "description": "Wykonaj ten rozkaz, kiedy inny gracz obierze cię za cel ataku",
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": "Atak odparty, atakujący ginie",
+        "amount": null,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Atak zostaje odparty",
+        "amount": null,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "128",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Nielegalne laboratorium",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "3",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 14000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 10000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Garaż",
+      "Diler"
+    ]
+  },
+  {
+    "id": "129",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Podpalenie",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Firma przeciwnika",
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zostaje zniszczona",
+        "amount": null,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Karta dezaktywowana",
+        "amount": null,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "130",
+    "type": "ORDER",
+    "subtype": "REAKCJA",
+    "isDefault": false,
+    "name": "Pułapka",
+    "family": null,
+    "description": "Wykonaj ten rozkaz, kiedy inny gracz obierze cię za cel ataku",
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": "Atak odparty, atakujący ginie",
+        "amount": null,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Atak zostaje odparty",
+        "amount": null,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "131",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Ostrzał z samochodu",
+    "family": null,
+    "description": "W przypadku niepowodzenia gangster odpowiada ogniem",
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Gangster przeciwnika",
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zostaje zamordowany",
+        "amount": null,
+        "diceSymbol": "?",
+        "diceReq": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Gangster odpowiada ogniem",
+        "amount": null,
+        "diceSymbol": "?",
+        "diceReq": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "132",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Przekupstwo",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Biznesmen przeciwnika",
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zmienia właściciela",
+        "amount": null,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": null,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "133",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Zabójstwo biznesmena",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Biznesmen przeciwnika",
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zostaje zamordowany",
+        "amount": null,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Karta dezaktywowana",
+        "amount": null,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "134",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Gang narkotykowy",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 30000,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 22000,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ],
+    "requirements": [
+      "Diler",
+      "Diler",
+      "Diler",
+      "Klub nocny",
+      "Gliniarz"
+    ]
+  },
+  {
+    "id": "135",
+    "type": "ORDER",
+    "subtype": "REAKCJA",
+    "isDefault": false,
+    "name": "Rabunek",
+    "family": null,
+    "description": "Wykonaj ten rozkaz, kiedy inny gracz wykonał zlecenie",
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": "Dostajesz cały zysk",
+        "amount": null,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Dostajesz połowę zysku",
+        "amount": null,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "136",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Przekręt ubezpieczeniowy",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 21000,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 13000,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ],
+    "requirements": [
+      "Garaż",
+      "Gliniarz",
+      "Prawnik"
+    ]
+  },
+  {
+    "id": "137",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Kradzież",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Inny gracz",
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": "Wpłata do gracza",
+        "amount": 9000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Wpłata do gracza",
+        "amount": 7000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "138",
+    "type": "ORDER",
+    "subtype": "NONE",
+    "isDefault": false,
+    "name": "Wyścigi konne",
+    "family": null,
+    "description": "Wszystko albo nic! Połóż na tej karcie do 20000 ze swoich pieniędzy",
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": "Pieniądze zostają podwojone!",
+        "amount": null,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Tracisz te pieniądze",
+        "amount": null,
+        "diceSymbol": null,
+        "diceReq": null
+      }
+    ]
+  },
+  {
+    "id": "139",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Kradzież",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Inny gracz",
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": "Wpłata do gracza",
+        "amount": 12000,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Wpłata do gracza",
+        "amount": 8000,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "140",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Skład toksycznych odpadów",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 21000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 15000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Zakład Utylizacji Odpadów",
+      "Firma budowlana",
+      "Polityk"
+    ]
+  },
+  {
+    "id": "141",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Morderstwo",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Gangster przeciwnika",
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zostaje zamordowany",
+        "amount": null,
+        "diceSymbol": "?",
+        "diceReq": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": null,
+        "diceSymbol": "?",
+        "diceReq": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "142",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Morderstwo",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Gangster przeciwnika",
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zostaje zamordowany",
+        "amount": null,
+        "diceSymbol": "?",
+        "diceReq": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": null,
+        "diceSymbol": "?",
+        "diceReq": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "143",
+    "type": "ORDER",
+    "subtype": "REAKCJA",
+    "isDefault": false,
+    "name": "Pułapka",
+    "family": null,
+    "description": "Wykonaj ten rozkaz, kiedy inny gracz obierze cię za cel ataku",
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": "Atak odparty, atakujący ginie",
+        "amount": null,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Atak zostaje odparty",
+        "amount": null,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "144",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Mecz bokserski",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 20000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 15000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Lichwiarz",
+      "Lichwiarz",
+      "Lichwiarz",
+      "Alfons"
+    ]
+  },
+  {
+    "id": "145",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Produkcja filmu",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 20000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 14000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Alfons",
+      "Alfons",
+      "Prawnik",
+      "Diler"
+    ]
+  },
+  {
+    "id": "146",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Oszustwo w handlu neruchomiściami",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 24000,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 16000,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ],
+    "requirements": [
+      "Firma budowlana",
+      "Polityk",
+      "Prawnik",
+      "Lichwiarz"
+    ]
+  },
+  {
+    "id": "147",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Przekupstwo",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Biznesmen przeciwnika",
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zmienia właściciela",
+        "amount": null,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": null,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "148",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Ostrzał z samochodu",
+    "family": null,
+    "description": "W przypadku niepowodzenia gangster odpowiada ogniem",
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Gangster przeciwnika",
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zostaje zamordowany",
+        "amount": null,
+        "diceSymbol": "?",
+        "diceReq": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Gangster odpowiada ogniem",
+        "amount": null,
+        "diceSymbol": "?",
+        "diceReq": [
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "id": "149",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Manipulacja hazardowa",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 24000,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 16000,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ],
+    "requirements": [
+      "Kasyno",
+      "Gliniarz",
+      "Prawnik"
+    ]
+  },
+  {
+    "id": "150",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Impreza u senatora",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 24000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 18000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Polityk",
+      "Klub nocny",
+      "Alfons",
+      "Diler"
+    ]
+  },
+  {
+    "id": "151",
+    "type": "ORDER",
+    "subtype": "ATAK",
+    "isDefault": false,
+    "name": "Samochód pułapka",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": "Gangster przeciwnika",
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": "Zostaje zamordowany",
+        "amount": null,
+        "diceSymbol": "⠛⠛",
+        "diceReq": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Karta dezaktywowana",
+        "amount": null,
+        "diceSymbol": "⠛",
+        "diceReq": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "152",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Przemyt samochodów",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 21000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 15000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Garaż",
+      "Polityk",
+      "Zakład Utylizacji Odpadów"
+    ]
+  },
+  {
+    "id": "153",
+    "type": "ORDER",
+    "subtype": "ZLECENIE",
+    "isDefault": false,
+    "name": "Pułapka zadłużenia",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 0,
+    "specialCost": "",
+    "income": 0,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": "4",
+    "options": [
+      {
+        "id": 1,
+        "text": null,
+        "amount": 20000,
+        "diceSymbol": "⠕⠕",
+        "diceReq": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "text": null,
+        "amount": 14000,
+        "diceSymbol": "⠕",
+        "diceReq": [
+          3
+        ]
+      }
+    ],
+    "requirements": [
+      "Lichwiarz",
+      "Kasyno"
+    ]
+  },
+  {
+    "id": "154",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": true,
+    "name": "Polityk",
+    "family": "Calmuti",
+    "description": "W fazie Dobierania kart dostajesz jedną dodatkową kartę wpływu",
+    "phase": null,
+    "cost": 2000,
+    "specialCost": null,
+    "income": 1000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "155",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": true,
+    "name": "Alfons",
+    "family": "Calmuti",
+    "description": "Liczy się do Monopolu na PROSTYTUCJĘ",
+    "phase": null,
+    "cost": 4000,
+    "specialCost": null,
+    "income": 2000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "156",
+    "type": "BUSINESS",
+    "subtype": "FIRMA",
+    "isDefault": true,
+    "name": "Garaż",
+    "family": "Calmuti",
+    "description": null,
+    "phase": null,
+    "cost": 8000,
+    "specialCost": null,
+    "income": 4000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "157",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": true,
+    "name": "Diler",
+    "family": "DiMaggio",
+    "description": "Liczy się do Monopolu na NARKOTYKI",
+    "phase": null,
+    "cost": 4000,
+    "specialCost": null,
+    "income": 2000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "158",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": true,
+    "name": "Prawnik",
+    "family": "DiMaggio",
+    "description": "Raz na rundę możesz podejrzeć dwie karty Rozkazów przeciwników",
+    "phase": null,
+    "cost": 2000,
+    "specialCost": null,
+    "income": 1000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "159",
+    "type": "BUSINESS",
+    "subtype": "FIRMA",
+    "isDefault": true,
+    "name": "Firma budowlana",
+    "family": "DiMaggio",
+    "description": null,
+    "phase": null,
+    "cost": 8000,
+    "specialCost": null,
+    "income": 4000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "160",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": true,
+    "name": "Gliniarz",
+    "family": "Blundetto",
+    "description": "Tylko przy Zleceniach raz na rundę możesz rzucić ponownie jedną kością",
+    "phase": null,
+    "cost": 2000,
+    "specialCost": null,
+    "income": 1000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "161",
+    "type": "BUSINESS",
+    "subtype": "FIRMA",
+    "isDefault": true,
+    "name": "Zakład Utyl. Odp.",
+    "family": "Blundetto",
+    "description": null,
+    "phase": null,
+    "cost": 8000,
+    "specialCost": null,
+    "income": 4000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "162",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": true,
+    "name": "Lichwiarz",
+    "family": "Blundetto",
+    "description": "Liczy się do Monopolu na POŻYCZKI",
+    "phase": null,
+    "cost": 4000,
+    "specialCost": null,
+    "income": 2000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "163",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": true,
+    "name": "Prawnik",
+    "family": "Caruso",
+    "description": "Raz na rundę możesz podglądnąć dwie karty Rozkazów przeciwników",
+    "phase": null,
+    "cost": 2000,
+    "specialCost": null,
+    "income": 1000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "164",
+    "type": "BUSINESS",
+    "subtype": "FIRMA",
+    "isDefault": true,
+    "name": "Kasyno",
+    "family": "Caruso",
+    "description": null,
+    "phase": null,
+    "cost": 14000,
+    "specialCost": null,
+    "income": 7000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "165",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": true,
+    "name": "Alfons",
+    "family": "LaServa",
+    "description": "Liczy się do Monopolu na PROSTYTUCJĘ",
+    "phase": null,
+    "cost": 4000,
+    "specialCost": null,
+    "income": 2000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "166",
+    "type": "BUSINESS",
+    "subtype": "FIRMA",
+    "isDefault": true,
+    "name": "Klub nocny",
+    "family": "LaServa",
+    "description": null,
+    "phase": null,
+    "cost": 12000,
+    "specialCost": null,
+    "income": 6000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "167",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": false,
+    "name": "Diler",
+    "family": null,
+    "description": "Liczy się do Monopolu na NARKOTYKI",
+    "phase": null,
+    "cost": 4000,
+    "specialCost": null,
+    "income": 2000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "168",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": false,
+    "name": "Diler",
+    "family": null,
+    "description": "Liczy się do Monopolu na NARKOTYKI",
+    "phase": null,
+    "cost": 4000,
+    "specialCost": null,
+    "income": 2000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "169",
+    "type": "BUSINESS",
+    "subtype": "FIRMA",
+    "isDefault": false,
+    "name": "Klub nocny",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 12000,
+    "specialCost": null,
+    "income": 6000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "170",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": false,
+    "name": "Diler",
+    "family": null,
+    "description": "Liczy się do Monopolu na NARKOTYKI",
+    "phase": null,
+    "cost": 4000,
+    "specialCost": null,
+    "income": 2000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "171",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": false,
+    "name": "Lichwiarz",
+    "family": null,
+    "description": "Liczy się do Monopolu na POŻYCZKI",
+    "phase": null,
+    "cost": 4000,
+    "specialCost": null,
+    "income": 2000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "172",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": false,
+    "name": "Diler",
+    "family": null,
+    "description": "Liczy się do Monopolu na NARKOTYKI",
+    "phase": null,
+    "cost": 4000,
+    "specialCost": null,
+    "income": 2000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "173",
+    "type": "BUSINESS",
+    "subtype": "FIRMA",
+    "isDefault": false,
+    "name": "Firma budowlana",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 8000,
+    "specialCost": null,
+    "income": 4000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "174",
+    "type": "BUSINESS",
+    "subtype": "FIRMA",
+    "isDefault": false,
+    "name": "Zakład Utyl. Odp.",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 8000,
+    "specialCost": null,
+    "income": 4000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "175",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": false,
+    "name": "Gliniarz",
+    "family": null,
+    "description": "Tylko przy Zleceniach raz na rundę możesz rzucić ponownie jedną kością",
+    "phase": null,
+    "cost": 2000,
+    "specialCost": null,
+    "income": 1000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "176",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": false,
+    "name": "Prawnik",
+    "family": null,
+    "description": "Raz na rundę możesz podglądnąć dwie karty Rozkazów przeciwników",
+    "phase": null,
+    "cost": 2000,
+    "specialCost": null,
+    "income": 1000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "177",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": false,
+    "name": "Polityk",
+    "family": null,
+    "description": "W fazie Dobierania kart dostajesz jedną dodatkową kartę wpływu",
+    "phase": null,
+    "cost": 2000,
+    "specialCost": null,
+    "income": 1000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "178",
+    "type": "BUSINESS",
+    "subtype": "FIRMA",
+    "isDefault": false,
+    "name": "Garaż",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 8000,
+    "specialCost": null,
+    "income": 4000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "179",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": false,
+    "name": "Gliniarz",
+    "family": null,
+    "description": "Tylko przy Zleceniach raz na rundę możesz rzucić ponownie jedną kością",
+    "phase": null,
+    "cost": 2000,
+    "specialCost": null,
+    "income": 1000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "180",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": false,
+    "name": "Alfons",
+    "family": null,
+    "description": "Liczy się do Monopolu na PROSTYTUCJĘ",
+    "phase": null,
+    "cost": 4000,
+    "specialCost": null,
+    "income": 2000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "181",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": false,
+    "name": "Alfons",
+    "family": null,
+    "description": "Liczy się do Monopolu na PROSTYTUCJĘ",
+    "phase": null,
+    "cost": 4000,
+    "specialCost": null,
+    "income": 2000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "182",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": false,
+    "name": "Alfons",
+    "family": null,
+    "description": "Liczy się do Monopolu na PROSTYTUCJĘ",
+    "phase": null,
+    "cost": 4000,
+    "specialCost": null,
+    "income": 2000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "183",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": false,
+    "name": "Polityk",
+    "family": null,
+    "description": "W fazie Dobierania kart dostajesz jedną dodatkową kartę wpływu",
+    "phase": null,
+    "cost": 2000,
+    "specialCost": null,
+    "income": 1000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "184",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": false,
+    "name": "Lichwiarz",
+    "family": null,
+    "description": "Liczy się do Monopolu na POŻYCZKI",
+    "phase": null,
+    "cost": 4000,
+    "specialCost": null,
+    "income": 2000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "185",
+    "type": "BUSINESS",
+    "subtype": "FIRMA",
+    "isDefault": false,
+    "name": "Kasyno",
+    "family": null,
+    "description": null,
+    "phase": null,
+    "cost": 14000,
+    "specialCost": null,
+    "income": 7000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "186",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": false,
+    "name": "Lichwiarz",
+    "family": null,
+    "description": "Liczy się do Monopolu na POŻYCZKI",
+    "phase": null,
+    "cost": 4000,
+    "specialCost": null,
+    "income": 2000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
+  },
+  {
+    "id": "187",
+    "type": "BUSINESS",
+    "subtype": "BIZNESMEN",
+    "isDefault": false,
+    "name": "Lichwiarz",
+    "family": null,
+    "description": "Liczy się do Monopolu na POŻYCZKI",
+    "phase": null,
+    "cost": 4000,
+    "specialCost": null,
+    "income": 2000,
+    "strength": 0,
+    "strengthText": "",
+    "target": null,
+    "round": null,
+    "options": []
   }
 ]
