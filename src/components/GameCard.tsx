@@ -129,6 +129,15 @@ export const GameCard: React.FC<GameCardProps> = ({ card, scale = 1, onClick }) 
          )}
       </div>
 
+      {card.type === 'ORDER' && card.round && (
+        <div className="absolute top-8 right-0 z-30 bg-white text-black text-[10px] font-black px-1.5 py-0.5 rounded-bl-md border-l border-b border-black/20 shadow-sm">
+            {card.round === '1' && 'I'}
+            {card.round === '2' && 'II'}
+            {card.round === '3' && 'III'}
+            {card.round === '4' && 'IV'}
+        </div>
+      )}
+
       {/* --- SUB-NAGŁÓWEK --- */}
       {(getSubtypeLabel() || card.target || card.family) && (
         <div className="flex justify-center items-center px-1 py-0.5 text-[9px] uppercase font-bold tracking-widest bg-black/30 border-b border-white/5">

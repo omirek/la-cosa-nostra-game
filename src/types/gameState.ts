@@ -7,6 +7,8 @@ export interface PlayerState {
   hand: string[];      // Lista ID kart na ręce
   table: string[];     // Lista ID kart na stole (Gangsterzy)
   isReady: boolean;    // Czy gotowy
+  dealTokens?: number; 
+  family?: string; 
 }
 
 export interface GameState {

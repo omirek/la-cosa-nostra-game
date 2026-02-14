@@ -112,6 +112,7 @@ function App() {
             gameId={activeGameId} 
             myId={session.user.id} 
             initialState={gameState} 
+            isHost={isHost} 
         />
     );
   }
